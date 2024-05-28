@@ -19,8 +19,6 @@ public class ObstacleDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("OnTriggerEnter");
-        Debug.LogWarning("OnTriggerEnter");
-        Debug.LogError("OnTriggerEnter"); 
+        
     }
 }
