@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MovementOnZAxis : MonoBehaviour
 {
-    public GameManager m_gameManager;
+    [SerializeField] private int m_score;
+    [HideInInspector] public GameManager m_gameManager;
     [SerializeField] private float m_speed = 20;
     private Transform m_transform;
 
@@ -12,7 +13,6 @@ public class MovementOnZAxis : MonoBehaviour
 
     private void Awake()
     {
-        m_gameManager = FindObjectOfType<GameManager>();
         m_transform = transform;
     }
     void Start()
@@ -24,6 +24,11 @@ public class MovementOnZAxis : MonoBehaviour
     void Update()
     {
         m_transform.position += m_transform.forward * m_speed * Time.deltaTime;
-        if(m_transform.position.z<-10) Destroy(gameObject);
+        if (m_transform.position.z < -10)
+        {
+            m_gameManager.AddScore(m_score);
+            Destroy(gameObject);
+        }
+        
     }
 }

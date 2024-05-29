@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda01367009b9644fa288044d88e5bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tartempion: {fileID: 7920011130760405541, guid: 66f639a1fa968934fbd6f33b06559ffb, type: 3}
+  m_score: 1
+  m_gameManager: {fileID: 0}
   m_speed: 50
 --- !u!1 &2669276738374295863
 GameObject:

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle-Big Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5035922457023383497, guid: a116611eecf01554a8a7efa3250704ed, type: 3}
+      propertyPath: m_score
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7757494809759064952, guid: a116611eecf01554a8a7efa3250704ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 6
